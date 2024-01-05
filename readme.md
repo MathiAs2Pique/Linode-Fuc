@@ -1,6 +1,8 @@
 # Fuc (Firewall Unique Conveyor)
 Designed for FiveM and Linode.
 
+<img src="assets/fancy-logo.webp" alt="Fancy Logo" width="200px">
+
 ## Main objective
 For my system ([PurpleMaze](https://purplemaze.net)), I needed to whitelist player IPs on the proxies they connect to. With my previous cloud provider (DigitalOcean), their API was really simple, with just a bunch of POST / DELETE. But now that my use case has been banned, I needed to rebuild my system on Linode.  
 The main problem with Linode is that their API for Cloud Firewalls is different, requiring the rule set to be updated with every PUT request. My systems were not designed to work with this: With high traffic and multiple nodes, it would create synchronisation or performance issues. Rather than rewrite all my code, I preferred to create this software, allowing me to manipulate their API like DigitalOcean's.
