@@ -1,0 +1,1 @@
+dotnet publish --runtime debian-x64 --self-contained true -c Release
